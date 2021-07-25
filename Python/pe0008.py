@@ -30,14 +30,14 @@ for s in list:
         digits.append(int(c))
 
 i = 0
-biggest = 0
+largest = 0
 while i <= len(digits) - nmul:
     if 0 in digits[i:i + nmul]:
         pass
     else:
         product = math.prod(digits[i:i + nmul])
-        if product > biggest:
-            biggest = product
+        if product > largest:
+            largest = product
     i += 1
   
-print(biggest)
+print(largest)
