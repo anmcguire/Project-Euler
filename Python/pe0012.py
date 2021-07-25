@@ -7,10 +7,13 @@ def factors(n):
     for i in range(1, int(math.sqrt(n)) + 1):
         if n % i == 0:
             factors.add(i)
-            factors.add(n / i)
+            factors.add(int(n / i))
     return factors
 
-def pe0003(n):
-    return max(filter(lambda x: len(factors(x)) == 2, [x for x in factors(n)]))
+n = j = k = 0
+while n <= 500:
+    j += 1
+    k += j
+    n = len(factors(k))
+print(k)
 
-print(pe0003(600851475143))
