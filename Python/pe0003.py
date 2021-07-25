@@ -10,7 +10,4 @@ def factors(n):
             factors.add(n / i)
     return factors
 
-def pe0003(n):
-    return max(filter(lambda x: len(factors(x)) == 2, [x for x in factors(n)]))
-
-print(pe0003(600851475143))
+print(max(filter(lambda x: len(factors(x)) == 2, [x for x in factors(600851475143)])))

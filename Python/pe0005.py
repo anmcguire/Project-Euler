@@ -8,12 +8,11 @@ def gcd(a, b):
     return a
 
 def lcm(a, b):
-    return abs((a * b) / gcd(a, b))
+    return abs(int((a * b) / gcd(a, b)))
 
-def pe0005(list):
-     n = 1
-     while len(list) > 0:
-          n = lcm(n, list.pop(0))
-     return(int(n))
+list = list(range(2, 21))
+n = 1
+while len(list) > 0:
+    n = lcm(n, list.pop(0))
 
-print(pe0005(list(range(2, 21))))
+print(n)

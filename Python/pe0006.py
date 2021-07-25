@@ -6,7 +6,4 @@ def sum_of_squares(n):
 def square_of_sum(n): 
     return (( n * (n + 1)) / 2) ** 2
 
-def pe0006(n):
-    return(square_of_sum(n) - sum_of_squares(n))
-
-print(pe0006(100))
+print(int(square_of_sum(100) - sum_of_squares(100)))
