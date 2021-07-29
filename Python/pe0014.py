@@ -5,9 +5,9 @@ def collatz(n, list):
     if n == 1:
         return(list)
     if n % 2 == 0:
-        return collatz(int(n / 2), list)
+        return(collatz(int(n / 2), list))
     else:
-        return collatz(int(3 * n + 1), list)
+        return(collatz(int(3 * n + 1), list))
 
 largest = 0
 answer = 1
