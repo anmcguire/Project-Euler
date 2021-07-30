@@ -23,21 +23,16 @@ list = [ "73167176531330624919225119674426574742355349194934", \
          "05886116467109405077541002256983155200055935729725", \
          "71636269561882670428252483600823257530420752963450" ]
 
-nmul = 13
 digits = []
 for s in list:
     for c in s:
-        digits.append(int(c))
+        digits += [ int(c) ]
 
-i = 0
-largest = 0
-while i <= len(digits) - nmul:
-    if 0 in digits[i:i + nmul]:
-        pass
-    else:
-        product = math.prod(digits[i:i + nmul])
-        if product > largest:
-            largest = product
+sup = i = 0
+n = 13
+
+while i <= len(digits) - n:
+    sup = max(sup, math.prod(digits[i:i + n]))
     i += 1
   
-print(largest)
+print(sup)
