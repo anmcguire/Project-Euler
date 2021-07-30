@@ -38,12 +38,16 @@ print(m)
 
 i = j = 0
 products = []
-for i in range(0, len(m) - 3):
-    for j in range(0, len(m[i]) - 3):
-        r = range(0, 4)
-        products.append(math.prod([m[i][j + k] for k in r]))              # vertical
-        products.append(math.prod([m[i + k][j] for k in r]))              # horizontal 
-        products.append(math.prod([m[i + k][j + k] for k in r]))          # left-right
-        products.append(math.prod([m[1-(i + k + 1)][j + k] for k in r]))  # right-left
+sup = 0
 
-print(max(products))
+b = len(m) - 3
+
+for i in range(0, b):
+    for j in range(0, b):
+        r = range(0, 4)
+        sup = max(sup, math.prod([m[i][j + k] for k in r]), \
+                       math.prod([m[i + k][j] for k in r]), \
+                       math.prod([m[i + k][j + k] for k in r]), \
+                       math.prod([m[1-(i + k + 1)][j + k] for k in r]))
+
+print(sup)
