@@ -2,9 +2,10 @@
 
 
 palindromes = []
+r = range(999, 99, -1)
 
-for i in range(999, 99, -1):
-    for j in range(999, 99, -1):
+for i in r:
+    for j in r:
         k = i * j
         if str(k) == str(k)[::-1]:
             palindromes.append(k)
