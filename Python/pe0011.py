@@ -34,8 +34,6 @@ for line in grid.splitlines():
         m[i].append(int(s))
     i += 1
 
-print(m)
-
 i = j = 0
 products = []
 sup = 0
