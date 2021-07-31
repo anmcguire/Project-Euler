@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-def fib(a, b, max, list):
+def recrel_to_max(a, b, max, list):
     if a + b < max:
         list.append(a + b)
-        fib(b, a + b, max, list)
+        recrel_to_max(b, a + b, max, list)
     return list
 
-print(sum(filter(lambda x: x % 2 == 0, fib(0, 1, 4E6, []))))
+print(sum(filter(lambda x: x % 2 == 0, recrel_to_max(0, 1, 4E6, []))))
