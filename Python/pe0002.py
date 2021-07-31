@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 def recrel_to_max(a, b, max, list):
     if a + b < max:

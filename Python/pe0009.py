@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 for a in range(1, 1001):
     for b in range(a, 1001):
