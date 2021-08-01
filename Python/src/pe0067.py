@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-file = open("p067_triangle.txt", "r")
+file = open("../data/p067_triangle.txt", "r")
 
 i = 0
 m = []
