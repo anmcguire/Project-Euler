@@ -39,6 +39,6 @@ for i in range(dim - 2, -1, -1):
         if m[i + 1][j] > m[i + 1][j + 1]:
             m[i][j] += m[i + 1][j]
         else:
-            m[i][j] += m[i + 1][j+1]
+            m[i][j] += m[i + 1][j + 1]
             
 print(m[0][0])
