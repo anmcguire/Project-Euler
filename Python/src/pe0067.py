@@ -11,6 +11,8 @@ for line in file.readlines():
         m[i].append(int(s))
     i += 1
 
+file.close()
+
 dim = max([len(k) for k in m])
 
 for k in m:
