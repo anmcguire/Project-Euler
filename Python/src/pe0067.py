@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
-file = open("../data/p067_triangle.txt", "r")
 
 i = 0
 m = []
+
+file = open("../data/p067_triangle.txt", "r")
 
 for line in file.readlines():
     m.append([])
